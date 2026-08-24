@@ -56,8 +56,6 @@ function useDefaultConfig() {
     gameConfig = {
         images: {
             background: 'assets/images/background.jpg',
-            moneyButton: 'assets/ui/деньги.png',
-            energyButton: 'assets/ui/энергия.png',
             bottomPanel: 'assets/ui/нижняя-панель.png'
         }
     };
@@ -71,24 +69,13 @@ function initializeGame() {
             `url(${gameConfig.images.background})`;
     }
     
-    // Кнопки ресурсов
-    const moneyImg = document.getElementById('moneyImg');
-    const energyImg = document.getElementById('energyImg');
+    // Нижняя панель
     const bottomPanelImg = document.getElementById('bottomPanelImg');
-    
-    if (gameConfig.images.moneyButton) {
-        moneyImg.src = gameConfig.images.moneyButton;
-    }
-    
-    if (gameConfig.images.energyButton) {
-        energyImg.src = gameConfig.images.energyButton;
-    }
-    
-    if (gameConfig.images.bottomPanel) {
+    if (gameConfig.images.bottomPanel && bottomPanelImg) {
         bottomPanelImg.src = gameConfig.images.bottomPanel;
     }
     
-    // Обработчики кнопок
+    // Обработчики кнопок (деньги и энергия теперь без картинок)
     document.getElementById('moneyBtn').addEventListener('click', () => {
         console.log('Деньги нажаты');
     });
