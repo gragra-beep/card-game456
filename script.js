@@ -56,9 +56,9 @@ function useDefaultConfig() {
     gameConfig = {
         images: {
             background: 'assets/images/background.jpg',
-            giftsButton: 'assets/ui/gifts_button.png',
-            questsButton: 'assets/ui/quests_button.png',
-            bottomPanel: 'assets/ui/bottom_panel.png'
+            moneyButton: 'assets/ui/деньги.png',
+            energyButton: 'assets/ui/энергия.png',
+            bottomPanel: 'assets/ui/нижняя-панель.png'
         }
     };
     initializeGame();
@@ -71,17 +71,17 @@ function initializeGame() {
             `url(${gameConfig.images.background})`;
     }
     
-    // Кнопки
-    const giftsImg = document.getElementById('giftsImg');
-    const questsImg = document.getElementById('questsImg');
+    // Кнопки ресурсов
+    const moneyImg = document.getElementById('moneyImg');
+    const energyImg = document.getElementById('energyImg');
     const bottomPanelImg = document.getElementById('bottomPanelImg');
     
-    if (gameConfig.images.giftsButton) {
-        giftsImg.src = gameConfig.images.giftsButton;
+    if (gameConfig.images.moneyButton) {
+        moneyImg.src = gameConfig.images.moneyButton;
     }
     
-    if (gameConfig.images.questsButton) {
-        questsImg.src = gameConfig.images.questsButton;
+    if (gameConfig.images.energyButton) {
+        energyImg.src = gameConfig.images.energyButton;
     }
     
     if (gameConfig.images.bottomPanel) {
@@ -89,12 +89,12 @@ function initializeGame() {
     }
     
     // Обработчики кнопок
-    document.getElementById('giftsBtn').addEventListener('click', () => {
-        console.log('ДАРЫ нажаты');
+    document.getElementById('moneyBtn').addEventListener('click', () => {
+        console.log('Деньги нажаты');
     });
     
-    document.getElementById('questsBtn').addEventListener('click', () => {
-        console.log('ЗАДАНИЯ нажаты');
+    document.getElementById('energyBtn').addEventListener('click', () => {
+        console.log('Энергия нажата');
     });
 }
 
