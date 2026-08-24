@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pick Card Arts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Экран входа -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-box">
+            <h2>Вход в игру</h2>
+            <input type="text" id="loginInput" placeholder="Логин" autocomplete="off">
+            <input type="password" id="passwordInput" placeholder="Пароль">
+            <button id="loginBtn">Войти</button>
+            <p class="error-msg" id="errorMsg"></p>
+        </div>
+    </div>
+
+    <!-- Основной контент (скрыт до входа) -->
+    <div class="game-content" id="gameContent" style="display: none;">
+        <!-- Фон -->
+        <div class="background" id="background"></div>
+        
+        <!-- Кнопки сверху -->
+        <div class="top-buttons">
+            <button class="tab-button" id="giftsBtn">
+                <img src="" alt="" id="giftsImg">
+                <span class="button-text">ДАРЫ</span>
+            </button>
+            <button class="tab-button" id="questsBtn">
+                <img src="" alt="" id="questsImg">
+                <span class="button-text">ЗАДАНИЯ</span>
+            </button>
+        </div>
+        
+        <!-- Нижняя панель -->
+        <div class="bottom-panel">
+            <img src="" alt="" id="bottomPanelImg">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

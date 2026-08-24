@@ -1,0 +1,8 @@
+{
+    "images": {
+        "background": "assets/images/background.jpg",
+        "giftsButton": "assets/ui/gifts_button.png",
+        "questsButton": "assets/ui/quests_button.png",
+        "bottomPanel": "assets/ui/bottom_panel.png"
+    }
+}
