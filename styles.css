@@ -114,6 +114,7 @@ body {
     background-repeat: no-repeat;
     z-index: 1;
 }
+
 /* ===== КНОПКИ В ПРАВОМ ВЕРХНЕМ УГЛУ ===== */
 .top-right-buttons {
     position: fixed;
@@ -122,6 +123,7 @@ body {
     display: flex;
     gap: 10px;
     z-index: 10;
+    align-items: center;
 }
 
 .resource-button {
@@ -136,6 +138,7 @@ body {
     min-height: 45px !important;
     max-height: 45px !important;
     transition: transform 0.1s;
+    flex-shrink: 0;
 }
 
 .resource-button:active {
@@ -150,30 +153,6 @@ body {
     display: block;
 }
 
-/* ===== АДАПТАЦИЯ ===== */
-@media (max-width: 375px) {
-    .resource-button {
-        width: 75px !important;
-        height: 38px !important;
-        min-width: 75px !important;
-        max-width: 75px !important;
-        min-height: 38px !important;
-        max-height: 38px !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .resource-button {
-        width: 110px !important;
-        height: 55px !important;
-        min-width: 110px !important;
-        max-width: 110px !important;
-        min-height: 55px !important;
-        max-height: 55px !important;
-    }
-}
-
-}
 /* ===== НИЖНЯЯ ПАНЕЛЬ ===== */
 .bottom-panel {
     position: fixed;
@@ -199,8 +178,12 @@ body {
 /* ===== АДАПТАЦИЯ ===== */
 @media (max-width: 375px) {
     .resource-button {
-        width: 70px;
-        height: 35px;
+        width: 75px !important;
+        height: 38px !important;
+        min-width: 75px !important;
+        max-width: 75px !important;
+        min-height: 38px !important;
+        max-height: 38px !important;
     }
     
     .top-right-buttons {
@@ -211,8 +194,12 @@ body {
 
 @media (min-width: 768px) {
     .resource-button {
-        width: 100px;
-        height: 50px;
+        width: 110px !important;
+        height: 55px !important;
+        min-width: 110px !important;
+        max-width: 110px !important;
+        min-height: 55px !important;
+        max-height: 55px !important;
     }
     
     .top-right-buttons {
