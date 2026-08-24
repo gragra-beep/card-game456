@@ -69,11 +69,6 @@ function initializeGame() {
             `url(${gameConfig.images.background})`;
     }
     
-    // Нижняя панель
-    const bottomPanelImg = document.getElementById('bottomPanelImg');
-    if (gameConfig.images.bottomPanel && bottomPanelImg) {
-        bottomPanelImg.src = gameConfig.images.bottomPanel;
-    }
     
     // Обработчики кнопок (деньги и энергия теперь без картинок)
     document.getElementById('moneyBtn').addEventListener('click', () => {
